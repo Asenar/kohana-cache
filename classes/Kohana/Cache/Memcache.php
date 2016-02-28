@@ -1,4 +1,5 @@
-<?php
+<?php defined('SYSPATH') or die('No direct script access.');
+
 /**
  * [Kohana Cache](api/Kohana_Cache) Memcache driver,
  *
@@ -80,6 +81,7 @@
  * @copyright  (c) 2009-2012 Kohana Team
  * @license    http://kohanaphp.com/license
  */
+
 class Kohana_Cache_Memcache extends Cache implements Kohana_Cache_Arithmetic {
 
 	// Memcache has a maximum cache lifetime of 30 days
