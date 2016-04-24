@@ -29,6 +29,7 @@ class Kohana_Cache_Memcached extends Cache implements Kohana_Cache_Arithmetic {
         if (!extension_loaded('memcached'))
         {
             // exception missing memcached extension
+            // /!\ this not means the memcached server is installed
             throw new Kohana_Cache_Exception('memcached extension is not loaded');
         }
 
