@@ -185,7 +185,8 @@ class Kohana_Cache_Memcached extends Cache implements Kohana_Cache_Arithmetic {
      */
     public function delete_all()
     {
-        return $this->memcached_instance->flush();
+        $this->memcached_instance->flush();
+        return $this->memcached_instance->getResultCode();
     }
 
 	/**
